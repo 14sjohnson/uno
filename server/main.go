@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/labstack/echo"
+		"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 )
 
 func main() {
-	fmt.Println("USU - UNO v0.0.0")
+	 fmt.Println("USU - UNO v0.0.0")
 
 	// New Echo server
 	e := echo.New()
@@ -27,7 +27,7 @@ func main() {
 	}))
 
 	// Setup routes
-	setupRoutes(e)
+	   setupRoutes(e)
 
 	// Start server
 	e.Logger.Fatal(e.Start(":8080"))
