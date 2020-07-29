@@ -50,9 +50,9 @@
                   <v-btn @click.native="helpMenu" class="helpDropBtn">Need Help?</v-btn>
                   <v-div class="dropdown_content">                  
                     <v-btn  @click.native="hint">Hint</v-btn><br>
-                    <v-btn  @click.native="help('#section-one')">Rules</v-btn>
-                    <v-btn  @click.native="help('#section-two')">Tutorials</v-btn>
-                    <v-btn  @click.native="help('#section-three')">Card Abilities</v-btn>
+                    <v-btn  @click.native="help()">Rules</v-btn>
+                    <v-btn  @click.native="help()">Tutorials</v-btn>
+                    <v-btn  @click.native="help()">Card Abilities</v-btn>
                   </v-div>
                 </v-div>    
               </v-card>
@@ -133,12 +133,7 @@ export default {
       });
     },
     help(){
-      window.open("http://localhost:3000/help#section-one", '_blank')
-    },
-    hint(){
-      var color = this.current_card[0].color
-      var number = this.current_card[0].number
-      alert("Play a card with the number " + number + " or a card that is the color " + color + ".")
+      process.env.NODE_ENV === 'production' ? window.open("https://uno-fievsqoyiq-uw.a.run.app/help", '_blank') : window.open("http://localhost:3000/help", '_blank')
     },
     helpMenu(){
       window.onclick = function(event) {

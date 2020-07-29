@@ -1,16 +1,11 @@
 <template class="Scroll">
 
     <div class="Scroll">
-        <!-- <v-content>
-            <SectionOne id="section-one"/>
-            <SectionTwo id="section-two"/>     
-            <SectionThree id="section-three"/>
-        </v-content> -->
         <v-container>
-            <div id="section-one">
-                
+            <section id="rules">
+
                 <h2> Rules: </h2>
-                <a id=section1><p class=text ><br>The first player is normally the player to the left of the dealer (you can also choose the youngest player) and gameplay usually follows a clockwise direction. Every player views his/her cards and tries to match the card in the Discard Pile.
+                <a id=rules><p class=text ><br>The first player is normally the player to the left of the dealer (you can also choose the youngest player) and gameplay usually follows a clockwise direction. Every player views his/her cards and tries to match the card in the Discard Pile.
                     You have to match either by the number, color, or the symbol/Action. For instance, if the Discard Pile has a red card that is an 8 you have to place either a red card or a card with an 8 on it. You can also play a Wild card (which can alter current color in play).<br>
                     <br>If the player has no matches or they choose not to play any of their cards even though they might have a match, they must draw a card from the Draw pile. If that card can be played, play it. Otherwise, keep the card, and the game moves on to the next person in turn. You can also play a Wild card, or a Wild Draw Four card on your turn.<br>
                     <br>Note: If the first card turned up from the Draw Pile (to form the Discard Pile) is an Action card, the Action from that card applies and must be carried out by the first player to go (as stated, it is usually the player to the dealer’s left). The exceptions are if a Wild or Wild Draw Four card is turned up.
@@ -19,17 +14,19 @@
                     <br>The game continues until a player has one card left. The moment a player has just one card they must yell “UNO!”. If they are caught not saying “Uno” by another player before the next player has taken their turn, that player must draw two new cards as a penalty. Assuming that the player is unable to play/discard their last card and needs to draw, but after drawing, is then able to play/discard that penultimate card, the player has to repeat the action of calling out “Uno”. The bottom line is – Announcing “Uno” needs to be repeated every time you are left with one card.
                     Once a player has no cards remaining, the game round is over, points are scored, and the game begins over again. Normally, everyone tries to be the first one to achieve 500 points, but you can also choose whatever points number to win the game, as long as everyone agrees to it.<br>
                 </p></a>
-            </div>    
-            <div id="section-two"> 
-                              
+            </section> 
+
+            <section id="tutorials"> 
+
                 <h2> Tutorials: </h2>
-                <a id="section2"><p class=text > Tutorials here</p></a>
-            </div>    
-            <div id="section-three">
-                
+                <a id="tutorials"><p class=text > Tutorials here</p></a>
+            </section>    
+
+            <section id="cardAbilities">
+
                 <h2> Card Abilities: </h2>
             
-                <a id="section3"><p class=text  ><br><strong>Action Cards:</strong>  Besides the number cards, there are several other cards that help mix up the game. These are called Action or Symbol cards.<br>
+                <a id="cardAbilities"><p class=text  ><br><strong>Action Cards:</strong>  Besides the number cards, there are several other cards that help mix up the game. These are called Action or Symbol cards.<br>
 
                     <br><strong>Uno Action Cards</strong><br>
 
@@ -49,27 +46,21 @@
                     <strong> Wild Customizable Card </strong> – There are 3 of them provided in any deck, and they are all blank. These are meant for you to write down your own “house rules”. Before the game starts, make sure everyone agrees to the rules and also on how many of the Wild Customizable cards will be used. You can use 1-3 of them per game. These are Wild Cards, so the same rules apply to them – The person who plays them gets to choose the color of play, and if turned up at the start, then the first player chooses the color of play. Note: Being a Wild card, the same rule applies to the Customizable card. Once you play this card, your turn is up, and you are not allowed to put down any card immediately after that until your turn arrives again.<br>
                     
                 </p></a>
-            </div>
+            </section>
         </v-container>
     </div>        
 </template>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:900);
-    /* .rules{
-        background-color: black;
-    } */
     .Scroll{
         height:100%;
         overflow:scroll; 
         overflow-block: black;
     }
     .text{
-        /* display: show; */
-        /* position: absolute; */
         color:#ddd;
         display: inline;
         display: block;
-        /* min-width: 160px; */
         }
 </style>
 
