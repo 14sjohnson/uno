@@ -50,9 +50,9 @@
                   <v-btn @click.native="helpMenu" class="helpDropBtn">Need Help?</v-btn>
                   <v-div class="dropdown_content">                  
                     <v-btn  @click.native="hint">Hint</v-btn><br>
-                    <v-btn  @click.native="help()">Rules</v-btn>
-                    <v-btn  @click.native="help()">Tutorials</v-btn>
-                    <v-btn  @click.native="help()">Card Abilities</v-btn>
+                    <v-btn  @click.native="help('rules')">Rules</v-btn>
+                    <v-btn  @click.native="help('tutorials')">Tutorials</v-btn>
+                    <v-btn  @click.native="help('cardAbilities')">Card Abilities</v-btn>
                   </v-div>
                 </v-div>    
               </v-card>
